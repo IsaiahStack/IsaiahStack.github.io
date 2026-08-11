@@ -193,14 +193,6 @@ button {
   border-color: var(--accent);
 }
 
-/* Temporary placeholder page heading (Projects / Contact, Stage 1) -------- */
-
-.placeholder-page {
-  display: flex;
-  align-items: center;
-  min-height: calc(100dvh - var(--nav-height) - 8rem);
-}
-
 /* Motion ------------------------------------------------------------------ */
 
 @media (prefers-reduced-motion: reduce) {
