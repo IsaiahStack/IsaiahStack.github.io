@@ -1,0 +1,155 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  background: rgba(5, 7, 13, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.brand {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--fg);
+  letter-spacing: -0.01em;
+}
+
+.brand span {
+  color: var(--accent);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.link {
+  position: relative;
+  padding: 0.5rem 0.9rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  color: var(--fg-secondary);
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.link:hover {
+  color: var(--fg);
+  background: var(--surface);
+}
+
+.linkActive {
+  color: var(--fg);
+}
+
+.linkActive::after {
+  content: "";
+  position: absolute;
+  left: 0.9rem;
+  right: 0.9rem;
+  bottom: 0.2rem;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--accent);
+  box-shadow: 0 0 8px 0 var(--glow);
+}
+
+.menuButton {
+  display: none;
+  padding: 0.5rem;
+  border-radius: var(--radius-sm);
+  color: var(--fg);
+}
+
+.menuButton:hover {
+  background: var(--surface);
+}
+
+.menuIcon {
+  width: 22px;
+  height: 16px;
+  position: relative;
+}
+
+.menuIcon span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: currentColor;
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease, top 0.2s ease;
+}
+
+.menuIcon span:nth-child(1) {
+  top: 0;
+}
+
+.menuIcon span:nth-child(2) {
+  top: 7px;
+}
+
+.menuIcon span:nth-child(3) {
+  top: 14px;
+}
+
+.menuIconOpen span:nth-child(1) {
+  top: 7px;
+  transform: rotate(45deg);
+}
+
+.menuIconOpen span:nth-child(2) {
+  opacity: 0;
+}
+
+.menuIconOpen span:nth-child(3) {
+  top: 7px;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 640px) {
+  .links {
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.25rem;
+    padding: 0.75rem 1.5rem 1.25rem;
+    background: rgba(5, 7, 13, 0.97);
+    border-bottom: 1px solid var(--border);
+    transform: translateY(-8px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform 0.18s ease, opacity 0.18s ease;
+  }
+
+  .linksOpen {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .link {
+    padding: 0.75rem 0.9rem;
+  }
+
+  .menuButton {
+    display: inline-flex;
+  }
+}
