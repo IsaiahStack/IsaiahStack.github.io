@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import ContactLink from "@/components/ContactLink";
 import styles from "./page.module.css";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Ways to get in touch — email, phone, GitHub, and LinkedIn.",
+};
 
 // Placeholders — replace with your real contact details.
 // Remove the LinkedIn entry entirely if you'd rather not list it.
@@ -32,7 +38,7 @@ export default function ContactPage() {
   return (
     <section className={`container ${styles.page}`}>
       <div className={styles.intro}>
-        <h1>Let&apos;s Connect</h1>
+        <h1 className="page-title">Let&apos;s Connect</h1>
         <p className={styles.description}>
           [Placeholder message — replace with a short, professional note
           about how you&apos;d like people to get in touch.]
