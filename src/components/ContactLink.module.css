@@ -18,6 +18,12 @@
   background: var(--surface-hover);
 }
 
+.row:focus-visible {
+  /* Rows touch the card's clipped edges, so an outward outline would get
+     cut off by the card's overflow: hidden — draw it inward instead. */
+  outline-offset: -2px;
+}
+
 .label {
   flex-shrink: 0;
   min-width: 4.5rem;

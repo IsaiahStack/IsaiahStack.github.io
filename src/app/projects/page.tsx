@@ -1,12 +1,18 @@
+import type { Metadata } from "next";
 import ProjectCard from "@/components/ProjectCard";
 import { PROJECTS } from "@/data/projects";
 import styles from "./page.module.css";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "Selected software projects and coursework.",
+};
 
 export default function ProjectsPage() {
   return (
     <section className={`container ${styles.page}`}>
       <div className={styles.intro}>
-        <h1>Projects</h1>
+        <h1 className="page-title">Projects</h1>
         <p className={styles.description}>
           A selection of projects and work — currently placeholders. Each
           card below will be replaced with a real project, description,

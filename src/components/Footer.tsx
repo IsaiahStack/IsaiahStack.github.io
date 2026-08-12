@@ -13,6 +13,7 @@ export default function Footer() {
             href="https://github.com/your-github-username"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit GitHub profile"
           >
             GitHub
           </a>

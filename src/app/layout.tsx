@@ -14,9 +14,19 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// Easy-to-change placeholders — update these with your real details.
+const SITE_NAME = "[Your Name] — Software Engineering Portfolio";
+const SITE_DESCRIPTION =
+  "Software engineering portfolio built with Next.js and TypeScript.";
+const AUTHOR_NAME = "[Your Name]";
+
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Software engineering portfolio built with Next.js and TypeScript.",
+  title: {
+    default: SITE_NAME,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  authors: [{ name: AUTHOR_NAME }],
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
