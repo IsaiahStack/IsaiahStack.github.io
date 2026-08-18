@@ -8,9 +8,8 @@ export default function Footer() {
       <div className={`container ${styles.inner}`}>
         <p>&copy; {year} Portfolio. Built with Next.js &amp; TypeScript.</p>
         <div className={styles.links}>
-          {/* Placeholder — replace with your real GitHub profile URL */}
           <a
-            href="https://github.com/your-github-username"
+            href="https://github.com/IsaiahStack"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Visit GitHub profile"

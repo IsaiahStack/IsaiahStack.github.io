@@ -7,29 +7,11 @@ export const metadata: Metadata = {
   description: "Ways to get in touch — email, phone, GitHub, and LinkedIn.",
 };
 
-// Placeholders — replace with your real contact details.
-// Remove the LinkedIn entry entirely if you'd rather not list it.
 const CONTACT_METHODS = [
   {
-    label: "Email",
-    value: "your.email@example.com",
-    href: "mailto:your.email@example.com",
-  },
-  {
-    label: "Phone",
-    value: "+1 (555) 555-5555",
-    href: "tel:+15555555555",
-  },
-  {
     label: "GitHub",
-    value: "github.com/your-github-username",
-    href: "https://github.com/your-github-username",
-    external: true,
-  },
-  {
-    label: "LinkedIn",
-    value: "linkedin.com/in/your-username",
-    href: "https://linkedin.com/in/your-username",
+    value: "github.com/IsaiahStack",
+    href: "https://github.com/IsaiahStack",
     external: true,
   },
 ];
@@ -40,8 +22,8 @@ export default function ContactPage() {
       <div className={styles.intro}>
         <h1 className="page-title">Let&apos;s Connect</h1>
         <p className={styles.description}>
-          [Placeholder message — replace with a short, professional note
-          about how you&apos;d like people to get in touch.]
+          Find my work, follow along with what I&apos;m building, and get in
+          touch through GitHub.
         </p>
       </div>
 
