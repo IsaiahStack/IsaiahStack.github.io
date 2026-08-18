@@ -9,8 +9,15 @@ const STATUS_LABEL: Record<ProjectStatus, string> = {
 };
 
 export default function ProjectCard({ project }: { project: Project }) {
-  const { title, description, technologies, githubUrl, liveUrl, image, status } =
-    project;
+  const {
+    title,
+    description,
+    technologies,
+    githubUrl,
+    liveUrl,
+    image,
+    status,
+  } = project;
 
   return (
     <article className={styles.card}>
@@ -24,7 +31,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             className={styles.image}
           />
         ) : (
-          <div className={styles.imagePlaceholder} aria-hidden="true">
+          <div className={styles.projectPreview} aria-hidden="true">
             <span>{"</>"}</span>
           </div>
         )}

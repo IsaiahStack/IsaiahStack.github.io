@@ -14,11 +14,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Easy-to-change placeholders — update these with your real details.
-const SITE_NAME = "[Your Name] — Software Engineering Portfolio";
+const SITE_NAME = "Isaiah Stack — Software Engineering Portfolio";
 const SITE_DESCRIPTION =
-  "Software engineering portfolio built with Next.js and TypeScript.";
-const AUTHOR_NAME = "[Your Name]";
+  "Isaiah Stack's software engineering portfolio, built with Next.js and TypeScript.";
+const AUTHOR_NAME = "Isaiah Stack";
 
 export const metadata: Metadata = {
   title: {

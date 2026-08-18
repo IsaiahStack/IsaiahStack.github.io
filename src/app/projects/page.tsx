@@ -14,9 +14,8 @@ export default function ProjectsPage() {
       <div className={styles.intro}>
         <h1 className="page-title">Projects</h1>
         <p className={styles.description}>
-          A selection of projects and work — currently placeholders. Each
-          card below will be replaced with a real project, description,
-          and links once it&apos;s ready to share.
+          A selection of software work built with web technologies and
+          systems-focused tools.
         </p>
       </div>
 

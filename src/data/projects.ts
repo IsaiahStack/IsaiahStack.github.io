@@ -17,35 +17,14 @@ export interface Project {
   status?: ProjectStatus;
 }
 
-/**
- * Placeholder projects — none of these are real work yet.
- * Replace each entry below with an actual project when it's ready to show.
- * To add a new project, copy one of these objects and edit its fields.
- */
 export const PROJECTS: Project[] = [
   {
-    title: "[Placeholder Project One]",
+    title: "Personal Portfolio",
     description:
-      "Placeholder project description. Replace this with a short summary of what the project does, the problem it solves, and your role in building it.",
+      "A statically exported portfolio for presenting software projects, technical skills, and ways to connect.",
     technologies: ["TypeScript", "React", "Next.js"],
-    githubUrl: "https://github.com/your-github-username/project-one",
-    liveUrl: "https://your-demo-link.example.com",
+    githubUrl: "https://github.com/IsaiahStack/IsaiahStack.github.io",
+    liveUrl: "https://isaiahstack.github.io",
     status: "in-progress",
-  },
-  {
-    title: "[Placeholder Project Two]",
-    description:
-      "Placeholder project description. Replace this with a short summary covering the goal of the project and what makes it interesting technically.",
-    technologies: ["C++", "SQL"],
-    githubUrl: "https://github.com/your-github-username/project-two",
-    status: "planned",
-  },
-  {
-    title: "[Placeholder Project Three]",
-    description:
-      "Placeholder project description. Replace this with a short summary of the project, including any notable challenges you solved.",
-    technologies: ["JavaScript", "Git", "Linux"],
-    githubUrl: "https://github.com/your-github-username/project-three",
-    status: "completed",
   },
 ];
