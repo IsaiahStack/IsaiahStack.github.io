@@ -19,7 +19,7 @@ export default function Navbar() {
     <header className={styles.nav}>
       <div className={`container ${styles.inner}`}>
         <Link href="/" className={styles.brand} onClick={() => setIsOpen(false)}>
-          <span>{"<"}</span>Portfolio<span>{" />"}</span>
+          <span>{"<"}</span>Isaiah<span>{" />"}</span>
         </Link>
 
         <button

@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className={`container ${styles.hero}`}>
       <div className={styles.content}>
-        <h1 className={styles.name}>Isaiah Stack</h1>
+        <h1 className={styles.name}>Isaiah Raust</h1>
         <p className={styles.title}>Software Engineer</p>
 
         <p className={styles.intro}>
